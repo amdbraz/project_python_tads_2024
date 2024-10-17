@@ -12,4 +12,5 @@ print(f'''Bem-vindo à aventura, {jogador}. Esse é seu quadro atual:
 Nível: {nivel}
 Experiência: {experiencia}
 Vida: {vida}''')
-print('Deseja 
+
+print('Deseja entrar na caverna misteriosa? [s/n]')
