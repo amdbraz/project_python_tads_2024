@@ -1,6 +1,7 @@
 #Discentes: Amanda Moreira Braz, Tony, Ellen e Gabriel.
 #1 Período - TADS
 
+import os
 from random import randint
 
 #Configurando o personagem
@@ -13,4 +14,6 @@ Nível: {nivel}
 Experiência: {experiencia}
 Vida: {vida}''')
 
-print('Deseja entrar na caverna misteriosa? [s/n]')
+caverna = str(input('Deseja entrar na caverna misteriosa? [s/n]\n '))
+
+
