@@ -3,11 +3,14 @@
 
 import os
 from random import randint
+import math
 
 #Configurando o personagem
 #mimik = baú surpresa
+#random = 0, 20
 
 jogador = str(input('Digite o nome do aventureiro: '))
+
 nivel = 1
 experiencia = 0
 vida = 3
