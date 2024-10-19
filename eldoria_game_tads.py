@@ -19,18 +19,7 @@ monstroM = ['Médio', , ,]
 monstroD = ['Difícil', , ,]
 monstroB = ['Boss', , ,]
 
-
-
-
-
-jogador = str(input('Digite o nome do aventureiro: '))
-
-
-
-print(f'''Bem-vindo à aventura, {jogador}. Esse é seu quadro atual:
-Nível: {nivel}
-Experiência: {experiencia}
-Vida: {vida}''')
+print(f'Bem-vindo à aventura, {jogador}.')
 
 caverna = str(input('Deseja entrar na caverna misteriosa? [s/n]\n '))
 if caverna == 's':
