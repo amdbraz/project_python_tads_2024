@@ -1,5 +1,5 @@
-#Discentes: Amanda Moreira Braz, Tony, Ellen e Gabriel.
-#1 Período - TADS
+#Discentes: Amanda Moreira Braz, Tony, Ellen e Gabriel, Luidy Vieira.
+#1 e 2  Período - TADS
 
 import os
 from random import randint
