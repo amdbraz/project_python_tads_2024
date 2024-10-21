@@ -19,6 +19,12 @@ monstroM = ['Médio', 'Ataque=4','Defesa=1','vida=12', 'Esquiva=4']
 monstroD = ['Difícil', 'Ataque=6','Defesa=2','vida=20', 'Esquiva=6']
 monstroC = ['Chefe', 'Ataque=10','Defesa=5','vida=45', 'Esquiva=8']
 
+
+Guerreiro= ['Ataque'+2,'Defesa'+1,'Esquiva'-1]
+Arqueiro= ['Ataque'+2 ,'Esquiva'+1 , -1 'Defesa', -1 'Vida']:
+Paladino= [+1 'Defesa', +1 'Vida', +1 'Ataque', -1 'Esquiva']
+
+
 print(f'Bem-vindo à aventura, {jogador}.')
 
 caverna = str(input('Deseja entrar na caverna misteriosa? [s/n]\n '))
