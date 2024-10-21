@@ -1,5 +1,5 @@
-#Discentes: Amanda Moreira Braz, Tony, Ellen e Gabriel.
-#1 Período - TADS
+#Discentes: Amanda Moreira Braz, Tony, Ellen e Gabriel, Luidy Vieira.
+#1 e 2  Período - TADS
 
 import os
 from random import randint
@@ -11,13 +11,13 @@ import math
 nome = str(input('Digite o nome do aventureiro: '))
 
 #jogador = vida, esquiva, ataque, ataque crítico, defesa
-jogador = [nome, , ,] #definir valores dos atributos
+jogador = [nome, 'Ataque','Defesa','vida', 'Esquiva'] #definir valores dos atributos
 
 #Definição dos monstros -
-monstroF = ['Fácil', ] #definir valores dos atributos dos monstros
-monstroM = ['Médio', ]
-monstroD = ['Difícil', ]
-monstroB = ['Boss', ]
+monstroF = ['Fácil', , ,] #definir valores dos atributos dos monstros
+monstroM = ['Médio', , ,]
+monstroD = ['Difícil', , ,]
+monstroB = ['Boss', , ,]
 
 print(f'Bem-vindo à aventura, {jogador}.')
 
