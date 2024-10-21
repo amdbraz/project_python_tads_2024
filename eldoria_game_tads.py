@@ -14,10 +14,10 @@ nome = str(input('Digite o nome do aventureiro: '))
 jogador = [nome, , ,] #definir valores dos atributos
 
 #Definição dos monstros -
-monstroF = ['Fácil', , ,] #definir valores dos atributos dos monstros
-monstroM = ['Médio', , ,]
-monstroD = ['Difícil', , ,]
-monstroB = ['Boss', , ,]
+monstroF = ['Fácil', ] #definir valores dos atributos dos monstros
+monstroM = ['Médio', ]
+monstroD = ['Difícil', ]
+monstroB = ['Boss', ]
 
 print(f'Bem-vindo à aventura, {jogador}.')
 
