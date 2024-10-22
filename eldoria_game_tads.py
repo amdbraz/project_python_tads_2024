@@ -6,11 +6,8 @@ from random import randint
 import math
 
 #mimik = baú surpresa
-#random = 0, 20
-nome = str(input('Digite o nome do aventureiro: '))
 
-#jogador = vida, esquiva, ataque, ataque crítico, defesa
-jogador = [nome, 'Ataque','Defesa','vida', 'Esquiva'] #definir valores dos atributos
+
 
 #monstro = ataque, defesa, vida, esquiva
 mmonstroF = ['Fraco',3, 1, 8, 2]
@@ -19,14 +16,34 @@ monstroD = ['Difícil', 6, 2, 20, 6]
 monstroC = ['Chefe', 10, 5, 45, 8]
 
 nome = str(input('Digite o nome do aventureiro: '))
-
 print(f'Bem-vindo à aventura, {nome}.')
-
-vocação = str(input('Escolha a sua vocação: '))
-
 
 caverna = str(input('Deseja entrar na caverna misteriosa? [s/n]\n '))
 if caverna == 's':
     print('Bem-vindo à Caverna. Pode entrar!')
 else:
-    print('Você saiu da caverna!🏃‍♂️💨') 
+    print('Você saiu da caverna!🏃‍♂️💨')
+
+vocação = str(input('Escolha a sua vocação: '))
+
+# Rola o dado d20 para verificar o baú
+rolagem = randint(1, 20 +1)
+
+if rolagem <= 2:
+    print("É um mímico! Você foi atacado!")
+else:
+    print("É um baú!")
+
+# O jogador tem 3 tentativas para abrir o baú
+    tentativas = 0
+    while tentativas < 3:
+        rolagem_abertura = randint(1, 20)
+        if rolagem_abertura >= 10:
+            print("Você abriu o baú e ganhou uma poção que restaura 50% da vida!")
+            break
+        else:
+            print("Falha ao tentar abrir o baú.")
+            tentativas += 1
+
+    if tentativas == 3:
+        print("Você falhou 3 vezes. O baú foi travado para sempre.")
