@@ -1,13 +1,11 @@
 #Discentes: Amanda Moreira Braz, Tony, Ellen e Gabriel, Luidy Vieira , Rodrigo da silva, Erildo Nunes.
-#1 e 2  Período - TADS
+#1º e 2º  Período - TADS
 
 import os
 from random import randint
 import math
 
 #mimik = baú surpresa
-
-
 
 #monstro = ataque, defesa, vida, esquiva
 mmonstroF = ['Fraco',3, 1, 8, 2]
