@@ -1,4 +1,4 @@
-#Discentes: Amanda Moreira Braz, Tony, Ellen e Gabriel, Luidy Vieira.
+#Discentes: Amanda Moreira Braz, Tony, Ellen e Gabriel, Luidy Vieira , Rodrigo da silva.
 #1 e 2  Período - TADS
 
 import os
@@ -31,6 +31,7 @@ if caverna == 's':
     print('Bem-vindo à Caverna. Pode entrar!')
 else:
     print('Você saiu da caverna!🏃‍♂️💨')
-    while True:.
+    while True:monstroC
     
+
 
