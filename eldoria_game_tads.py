@@ -31,7 +31,7 @@ if caverna == 's':
     print('Bem-vindo à Caverna. Pode entrar!')
 else:
     print('Você saiu da caverna!🏃‍♂️💨')
-    while True:monstroC
+    while True:
     
 
 
