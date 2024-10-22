@@ -1,4 +1,4 @@
-#Discentes: Amanda Moreira Braz, Tony, Ellen e Gabriel, Luidy Vieira.
+#Discentes: Amanda Moreira Braz, Tony, Ellen e Gabriel, Luidy Vieira , Rodrigo da silva.
 #1 e 2  Período - TADS
 
 import os
