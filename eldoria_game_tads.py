@@ -6,6 +6,9 @@ from random import randint
 import math
 
 #mimik = baú surpresa
+#personagem
+nome = str(input('Digite o nome do aventureiro: '))
+print(f'Bem-vindo à aventura, {nome}.')
 
 #monstro = ataque, defesa, vida, esquiva
 mmonstroF = ['Fraco',3, 1, 8, 2]
@@ -13,8 +16,7 @@ monstroM = ['Médio', 4, 1, 12, 4]
 monstroD = ['Difícil', 6, 2, 20, 6]
 monstroC = ['Chefe', 10, 5, 45, 8]
 
-nome = str(input('Digite o nome do aventureiro: '))
-print(f'Bem-vindo à aventura, {nome}.')
+
 
 caverna = str(input('Deseja entrar na caverna misteriosa? [s/n]\n '))
 if caverna == 's':
