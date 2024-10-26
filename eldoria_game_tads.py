@@ -7,8 +7,20 @@ import math
 
 #mimik = baú surpresa
 #personagem
-nome = str(input('Digite o nome do aventureiro: '))
+print("--------Seja Bem Vindo------")
+nome = str(input('Digite seu nomedo aventureiro: '))
 print(f'Bem-vindo à aventura, {nome}.')
+classe=int(input("""escolha sua classe :
+                 [1] guerreiro
+                 [2] arqueiro
+                 [3] clerico"""))
+vida = 5
+atk = 3
+defesa = 2
+esq = 0
+
+jogador_base={'jogador': nome ,'vida': 5 , 'ataque': 3, 'defesa' : 2, 'esq': 0}
+if 
 
 #monstro = ataque, defesa, vida, esquiva
 mmonstroF = ['Fraco',3, 1, 8, 2]
