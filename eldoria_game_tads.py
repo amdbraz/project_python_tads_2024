@@ -14,13 +14,19 @@ classe=int(input("""escolha sua classe :
                  [1] guerreiro
                  [2] arqueiro
                  [3] clerico"""))
+#ficha inicial
 vida = 5
 atk = 3
 defesa = 2
 esq = 0
 
+guerreiro={'vida':5}
 jogador_base={'jogador': nome ,'vida': 5 , 'ataque': 3, 'defesa' : 2, 'esq': 0}
-if 
+if classe==1:
+    jogador_base['ataque']+=2
+    jogador_base['defesa']+=2
+    print("jogador :",jogador_base['jogador'])
+    print("ataque :",jogador_base['ataque'])
 
 #monstro = ataque, defesa, vida, esquiva
 mmonstroF = ['Fraco',3, 1, 8, 2]
