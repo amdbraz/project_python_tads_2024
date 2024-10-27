@@ -8,7 +8,7 @@ import math
 #mimik = baú surpresa
 #personagem
 print("--------Seja Bem Vindo------")
-nome = str(input('Digite seu nomedo aventureiro: '))
+nome = str(input('Digite seu nome do aventureiro: '))
 print(f'Bem-vindo à aventura, {nome}.')
 classe=int(input("""escolha sua classe :
                  [1] guerreiro
