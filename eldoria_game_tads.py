@@ -65,3 +65,29 @@ else:
 
     if tentativas == 3:
         print("Você falhou 3 vezes. O baú foi travado para sempre.")
+
+
+
+
+
+
+class monstro:
+    def ___init____(self, personagen, exp_concedida):
+        self.personagen = personagen 
+        self.exp_concedida = exp_concedida
+
+
+monstro_fraco = monstro('monstro fraco', 50)
+monstro_medio = monstro ('monstro medio', 100)
+monstro_dificil = monstro('monstro dificil', 200)
+monstro_chefe = monstro('monstro chefe', 500)
+
+class personagem:
+    def ____init_____(self, personagem):
+        self.personagem=personagem
+        self.nivel = 1
+        self.exp =0
+        self.exp_para_proximo_nivel = 100
+        self.vida=100
+        self.forca =10
+        self.defesa =5
