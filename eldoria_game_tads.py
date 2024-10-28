@@ -10,7 +10,7 @@ import math
 print("--------Seja Bem Vindo------")
 nome = str(input('Digite seu nome do aventureiro: '))
 print(f'Bem-vindo à aventura, {nome}.')
-rint("""Escolha seu tipo de personagem:
+print("""Escolha seu tipo de personagem:)
 
 [1] Guerreiro
 
