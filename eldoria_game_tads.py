@@ -10,24 +10,32 @@ import math
 print("--------Seja Bem Vindo------")
 nome = str(input('Digite seu nome do aventureiro: '))
 print(f'Bem-vindo à aventura, {nome}.')
-classe=int(input("""escolha sua classe :
-                 [1] guerreiro
-                 [2] arqueiro
-                 [3] clerico"""))
-#ficha inicial
-vida = 5
-atk = 3
-defesa = 2
-esq = 0
+rint("""Escolha seu tipo de personagem:
 
-guerreiro={'vida':5}
-jogador_base={'jogador': nome ,'vida': 5 , 'ataque': 3, 'defesa' : 2, 'esq': 0}
-if classe==1:
-    jogador_base['ataque']+=2
-    jogador_base['defesa']+=2
-    print("jogador :",jogador_base['jogador'])
-    print("ataque :",jogador_base['ataque'])
+[1] Guerreiro
 
+[2] Arqueiro
+
+[3] Clérigo""")
+
+tipo_personagem = int(input("Digite o número do seu tipo: "))
+
+
+# Ficha inicial do jogador
+
+jogador_base = {
+
+    'jogador': nome,
+
+    'vida': 5,
+
+    'ataque': 3,
+
+    'defesa': 2,
+
+    'esquiva': 0
+
+}
 #monstro = ataque, defesa, vida, esquiva
 mmonstroF = ['Fraco',3, 1, 8, 2]
 monstroM = ['Médio', 4, 1, 12, 4]
