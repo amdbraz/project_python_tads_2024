@@ -6,24 +6,29 @@ from random import randint
 import math
 
 #mimik = baú surpresa
-#personagem
+
+#monstro = ataque, defesa, vida, esquiva
+mmonstroF = ['Fraco',3, 1, 8, 2]
+monstroM = ['Médio', 4, 1, 12, 4]
+monstroD = ['Difícil', 6, 2, 20, 6]
+monstroC = ['Chefe', 10, 5, 45, 8]
+
+# Ficha inicial do jogador
 print("--------Seja Bem Vindo------")
 nome = str(input('Digite seu nome do aventureiro: '))
 print(f'Bem-vindo à aventura, {nome}.')
-print("""Escolha seu tipo de personagem: 
+print("""Escolha a sua vocação: 
 
 [1] Guerreiro
 
 [2] Arqueiro
 
-[3] Clérigo""")
+[3] Clero""")
 
-tipo_personagem = int(input("Digite o número do seu tipo: "))
+vocacao = int(input("Digite o número do seu tipo: "))
 
-
-# Ficha inicial do jogador
-
-jogador_base = {
+#VOCAÇÃO
+guerreiro = {
 
     'jogador': nome,
 
@@ -36,18 +41,20 @@ jogador_base = {
     'esquiva': 0
 
 }
-#monstro = ataque, defesa, vida, esquiva
-mmonstroF = ['Fraco',3, 1, 8, 2]
-monstroM = ['Médio', 4, 1, 12, 4]
-monstroD = ['Difícil', 6, 2, 20, 6]
-monstroC = ['Chefe', 10, 5, 45, 8]
+
+if vocacao == 1:
+    print('Você escolheu o GUERREIRO. Este é seu quadro de vida:\n APARECER QUADRO DE VIDA')
+elif vocacao ==2:
+    print('Você escolheu o ARQUEIRO. Este é seu quadro de vida:\n APARECER QUADRO DE VIDA')
+else:
+    print('Você escolheu o CLERO. Este é seu quadro de vida:\n APARECER QUADRO DE VIDA')
 
 caverna = str(input('Deseja entrar na caverna misteriosa? [s/n]\n '))
 if caverna == 's':
     print('Bem-vindo à Caverna. Pode entrar!')
 elif caverna == 'n':
     print('Você saiu da caverna!🏃‍♂️💨')
-  
+
 # Rola o dado d20 para verificar o baú
 rolagem = randint(1, 20 +1)
 
