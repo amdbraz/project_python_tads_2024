@@ -10,7 +10,7 @@ import math
 print("--------Seja Bem Vindo------")
 nome = str(input('Digite seu nome do aventureiro: '))
 print(f'Bem-vindo à aventura, {nome}.')
-print("""Escolha seu tipo de personagem:)
+print("""Escolha seu tipo de personagem: 
 
 [1] Guerreiro
 
@@ -42,16 +42,12 @@ monstroM = ['Médio', 4, 1, 12, 4]
 monstroD = ['Difícil', 6, 2, 20, 6]
 monstroC = ['Chefe', 10, 5, 45, 8]
 
-
-
 caverna = str(input('Deseja entrar na caverna misteriosa? [s/n]\n '))
 if caverna == 's':
     print('Bem-vindo à Caverna. Pode entrar!')
-else:
+elif caverna == 'n':
     print('Você saiu da caverna!🏃‍♂️💨')
-
-vocação = str(input('Escolha a sua vocação: '))
-
+  
 # Rola o dado d20 para verificar o baú
 rolagem = randint(1, 20 +1)
 
@@ -75,20 +71,10 @@ else:
         print("Você falhou 3 vezes. O baú foi travado para sempre.")
 
 
-
-
-
-
 class monstro:
     def ___init____(self, personagen, exp_concedida):
         self.personagen = personagen 
         self.exp_concedida = exp_concedida
-
-
-monstro_fraco = monstro('monstro fraco', 50)
-monstro_medio = monstro ('monstro medio', 100)
-monstro_dificil = monstro('monstro dificil', 200)
-monstro_chefe = monstro('monstro chefe', 500)
 
 class personagem:
     def ____init_____(self, personagem):
