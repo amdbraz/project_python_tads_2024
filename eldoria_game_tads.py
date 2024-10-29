@@ -17,7 +17,7 @@ monstroC = ['Chefe', 10, 5, 45, 8]
 print("--------Seja Bem Vindo------")
 nome = str(input('Digite seu nome do aventureiro: '))
 print(f'Bem-vindo à aventura, {nome}.')
-print("""Escolha a sua vocação: 
+print("""Escolha a sua vocação: )
 
 [1] Guerreiro
 
