@@ -9,24 +9,48 @@ import math
 #personagem
 print("--------Seja Bem Vindo------")
 nome = str(input('Digite seu nomedo aventureiro: '))
+#jogador # Vida # ataque # defesa # esquiva 
+base=[nome,8,2,1,0]
+jogador=[nome,0,2,0,0,0]
+#==-==-=-=-=-==-classe-=-=-=-=-=-=-=-=-
+#nome | Vida | Ataque | Defesa | Esquiva 
+guerreiro=[0,0,2,1,-1]
+arqueiro=[0,-1,2,1,1]
+paladino=[0,1,1,1,-1]
+
+#=-=-=-=-==-Vocação-=-=-==-=-=
+#nome | Vida | Ataque | Defesa | Esquiva 
+humano=[0,1,1,1,1]
+anao=[0,1,0,1,0]
+elfo=[0,0,1,0,2]
+
+
 print(f'Bem-vindo à aventura, {nome}.')
+
 classe=int(input("""escolha sua classe :
                  [1] guerreiro
                  [2] arqueiro
-                 [3] clerico"""))
-#ficha inicial
-vida = 5
-atk = 3
-defesa = 2
-esq = 0
+                 [3] paladino"""))
+#time aqui
+print("---==---==-- classe escolhida!-------=-=-===")
+#time aqui
+raca=int(input("""escolha a raca do seu personagem :
+                 [1] humano
+                 [2] elfo
+                 [3] anoes """))
 
-guerreiro={'vida':5}
-jogador_base={'jogador': nome ,'vida': 5 , 'ataque': 3, 'defesa' : 2, 'esq': 0}
-if classe==1:
-    jogador_base['ataque']+=2
-    jogador_base['defesa']+=2
-    print("jogador :",jogador_base['jogador'])
-    print("ataque :",jogador_base['ataque'])
+print("---==---==-- raca escolhida!-------=-=-===")
+
+if classe==1 and classe==1:
+    jogador[1]=base[1]+guerreiro[1]+humano[1]
+    jogador[2]=base[2]+guerreiro[2]+humano[2]
+    jogador[3]=base[3]+guerreiro[3]+humano[3]
+    jogador[4]=base[4]+guerreiro[4]+humano[4]
+    print(f'{jogador[0]}')
+    print (f'seu vida:{jogador[1]}')
+    print (f'seu ataque:{jogador[2]}')
+    print (f'sua defesa:{jogador[3]}')
+    print (f'esquiva:{jogador[4]}')
 
 #monstro = ataque, defesa, vida, esquiva
 mmonstroF = ['Fraco',3, 1, 8, 2]
