@@ -60,34 +60,34 @@ monstroM = ['Médio', 4, 1, 12, 4]
 monstroD = ['Difícil', 6, 2, 20, 6]
 monstroC = ['Chefe', 10, 5, 45, 8]
 
-# Ficha inicial do jogador
-print("--------Seja Bem Vindo------")
-nome = str(input('Digite seu nome do aventureiro: '))
-print(f'Bem-vindo à aventura, {nome}.')
-print("""Escolha a sua vocação: )
+# # Ficha inicial do jogador
+# print("--------Seja Bem Vindo------")
+# nome = str(input('Digite seu nome do aventureiro: '))
+# print(f'Bem-vindo à aventura, {nome}.')
+# print("""Escolha a sua vocação: )
 
-[1] Guerreiro
+# [1] Guerreiro
 
-[2] Arqueiro
+# [2] Arqueiro
 
-[3] Clero""")
+# [3] Clero""")
 
-vocacao = int(input("Digite o número do seu tipo: "))
+# vocacao = int(input("Digite o número do seu tipo: "))
 
-#VOCAÇÃO
-guerreiro = {
+# #VOCAÇÃO
+# guerreiro = {
 
-    'jogador': nome,
+#     'jogador': nome,
 
-    'vida': 5,
+#     'vida': 5,
 
-    'ataque': 3,
+#     'ataque': 3,
 
-    'defesa': 2,
+#     'defesa': 2,
 
-    'esquiva': 0
+#     'esquiva': 0
 
-}
+# }
 
 if vocacao == 1:
     print('Você escolheu o GUERREIRO. Este é seu quadro de vida:\n APARECER QUADRO DE VIDA')
