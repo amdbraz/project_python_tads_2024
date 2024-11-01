@@ -51,6 +51,7 @@ if classe==1 and classe==1:
     print (f'seu ataque:{jogador[2]}')
     print (f'sua defesa:{jogador[3]}')
     print (f'esquiva:{jogador[4]}')
+    print('teste')
 
 #monstro = ataque, defesa, vida, esquiva
 mmonstroF = ['Fraco',3, 1, 8, 2]
