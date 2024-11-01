@@ -42,7 +42,7 @@ raca=int(input("""escolha a raca do seu personagem :
 
 print("---==---==-- raca escolhida!-------=-=-===")
 
-if classe==1 and classe==1:
+if classe==1 and raca==1:
     jogador[1]=base[1]+guerreiro[1]+humano[1]
     jogador[2]=base[2]+guerreiro[2]+humano[2]
     jogador[3]=base[3]+guerreiro[3]+humano[3]
@@ -53,6 +53,8 @@ if classe==1 and classe==1:
     print (f'sua defesa:{jogador[3]}')
     print (f'esquiva:{jogador[4]}')
     print('teste')
+elif classe== 1 and raca==2:
+    
 
 #monstro = ataque, defesa, vida, esquiva
 mmonstroF = ['Fraco',3, 1, 8, 2]
@@ -89,12 +91,12 @@ monstroC = ['Chefe', 10, 5, 45, 8]
 
 # }
 
-if vocacao == 1:
-    print('Você escolheu o GUERREIRO. Este é seu quadro de vida:\n APARECER QUADRO DE VIDA')
-elif vocacao ==2:
-    print('Você escolheu o ARQUEIRO. Este é seu quadro de vida:\n APARECER QUADRO DE VIDA')
-else:
-    print('Você escolheu o CLERO. Este é seu quadro de vida:\n APARECER QUADRO DE VIDA')
+# if vocacao == 1:
+#     print('Você escolheu o GUERREIRO. Este é seu quadro de vida:\n APARECER QUADRO DE VIDA')
+# elif vocacao ==2:
+#     print('Você escolheu o ARQUEIRO. Este é seu quadro de vida:\n APARECER QUADRO DE VIDA')
+# else:
+#     print('Você escolheu o CLERO. Este é seu quadro de vida:\n APARECER QUADRO DE VIDA')
 
 caverna = str(input('Deseja entrar na caverna misteriosa? [s/n]\n '))
 if caverna == 's':
