@@ -6,7 +6,7 @@ from random import randint
 import math
 
 #mimik = baú surpresa
-<<<<<<< HEAD
+
 #personagem
 print("--------Seja Bem Vindo------")
 nome = str(input('Digite seu nomedo aventureiro: '))
@@ -53,8 +53,6 @@ if classe==1 and classe==1:
     print (f'sua defesa:{jogador[3]}')
     print (f'esquiva:{jogador[4]}')
     print('teste')
-=======
->>>>>>> ade9326cc924d2467785971f95d85800f6191091
 
 #monstro = ataque, defesa, vida, esquiva
 mmonstroF = ['Fraco',3, 1, 8, 2]
