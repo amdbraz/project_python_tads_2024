@@ -140,43 +140,208 @@ mmonstroF = ['Fraco',3, 1, 8, 2]
 monstroM = ['Médio', 4, 1, 12, 4]
 monstroD = ['Difícil', 6, 2, 20, 6]
 monstroC = ['Chefe', 10, 5, 45, 8]
+#Pergunta se deseja entrar na caverna
+caverna = input('Deseja entrar na caverna misteriosa? [s/n]\n ').strip().lower()
 
-# # Ficha inicial do jogador
-# print("--------Seja Bem Vindo------")
-# nome = str(input('Digite seu nome do aventureiro: '))
-# print(f'Bem-vindo à aventura, {nome}.')
-# print("""Escolha a sua vocação: )
+if caverna == 's':
+    print('Bem-vindo à Caverna!')
 
-# [1] Guerreiro
+    #Pergunta se deseja continuar ou desistir
+    continuar = input('Você deseja continuar ou desistir? [s/n]\n ').strip().lower()
 
-# [2] Arqueiro
+    if continuar == 's':
+        #Rola o dado d20 para verificar o que encontrou
+        rolagem = random.randint(1, 20)
 
-# [3] Clero""")
+        if rolagem <= 2:
+            print("É um mímico! Você foi atacado!")
+        else:
+            print("É um baú!")
 
-# vocacao = int(input("Digite o número do seu tipo: "))
+            #O jogador tem 1 tentativa para abrir o baú
+            rolagem_abertura = random.randint(1, 10)
+            if rolagem_abertura >= 2:
+                print("Você abriu o baú e ganhou uma poção que restaura 50% da vida!")
+            else:
+                print("Falha ao tentar abrir o baú.")
+                #Oferece a opção de desistir
+                desistir = input('Você deseja desistir de abrir o baú? [s/n]\n ').strip().lower()
+                if desistir == 's':
+                    print("Você decidiu desistir. O baú ficou fechado.")
+                else:
+                    print("Você não pode tentar abrir o baú novamente.")
 
-# #VOCAÇÃO
-# guerreiro = {
+    else:
+        print('Você decidiu sair da caverna. Até a próxima! 🏃‍♂️💨')
 
-#     'jogador': nome,
+elif caverna == 'n':
+    print('Você saiu da caverna! 🏃‍♂️💨')
+else:
+    print("Resposta inválida. Por favor, digite 's' ou 'n'.")
+# Criando personagens
+nome_heroi = "Heroi"
+ataque_heroi = 5
+defesa_heroi = 3
+esquiva_heroi = 2
 
-#     'vida': 5,
+nome_inimigo = "Inimigo"
+ataque_inimigo = 4
+defesa_inimigo = 2
+esquiva_inimigo = 1
 
-#     'ataque': 3,
+# Teste de Ataque
+d20 = random.randint(1, 20)
+resultado_ataque = d20 + ataque_heroi
+print(f"{nome_heroi} rolou {d20} + Ataque({ataque_heroi}) = {resultado_ataque}")
 
-#     'defesa': 2,
+if resultado_ataque >= defesa_inimigo:
+    print(f"{nome_heroi} acertou o ataque!")
+    
+    # Teste de Esquiva
+    d20_esquiva = random.randint(1, 20)
+    resultado_esquiva = d20_esquiva + esquiva_inimigo
+    print(f"{nome_inimigo} rolou {d20_esquiva} + Esquiva({esquiva_inimigo}) = {resultado_esquiva}")
+    
+    if resultado_esquiva >= ataque_heroi:
+        print(f"{nome_inimigo} esquivou do ataque!")
+    else:
+        print(f"{nome_inimigo} não esquivou!")
+        
+        # Cálculo de dano
+        dano = ataque_heroi - defesa_inimigo
+        if dano < 0:
+            dano = 0
+        
+        print(f"Dano causado: {dano}")
+else:
+    print(f"{nome_heroi} não conseguiu acertar!")
 
-#     'esquiva': 0
+# Verificação de Acerto Crítico
+if d20 == 20:
+    dano *= 2
+    print("Crítico! Dano multiplicado por 2.")
 
-# }
+# Definindo atributos iniciais do personagem
+nivel = 1
+exp = 0
+atributo = 100  # Atributo inicial do personagem
 
-# if vocacao == 1:
-#     print('Você escolheu o GUERREIRO. Este é seu quadro de vida:\n APARECER QUADRO DE VIDA')
-# elif vocacao ==2:
-#     print('Você escolheu o ARQUEIRO. Este é seu quadro de vida:\n APARECER QUADRO DE VIDA')
-# else:
-#     print('Você escolheu o CLERO. Este é seu quadro de vida:\n APARECER QUADRO DE VIDA')
+# Experiência por tipo de monstro
+exp_monstro_fraco = 50
+exp_monstro_medio = 100
+exp_monstro_dificil = 200
+exp_monstro_chefe = 500
 
+# Requisitos de EXP para subir de nível
+def exp_para_subir_nivel(nivel):
+    if nivel == 1:
+        return 100
+    else:
+        return int(100 * (1.4 ** (nivel - 1)))
+
+# Função para subir de nível
+def subir_de_nivel():
+    global nivel
+    global atributo
+    print("Parabéns! Você subiu para o nível", nivel + 1)
+    nivel += 1
+    atributo = int(atributo * 1.5)  # Aumenta o atributo em 50%
+    print("Seu novo atributo é:", atributo)
+
+# Loop principal do jogo
+while True:
+    print("\nVocê está no nível:", nivel)
+    print("Experiência atual:", exp)
+    exp_necessaria = exp_para_subir_nivel(nivel)
+    print("Experiência necessária para o próximo nível:", exp_necessaria)
+
+    # Escolher um monstro aleatório
+    tipo_monstro = random.choice(["fraco", "medio", "dificil", "chefe"])
+    if tipo_monstro == "fraco":
+        print("Você enfrentou um Monstro Fraco!")
+        exp += exp_monstro_fraco
+    elif tipo_monstro == "medio":
+        print("Você enfrentou um Monstro Médio!")
+        exp += exp_monstro_medio
+    elif tipo_monstro == "dificil":
+        print("Você enfrentou um Monstro Difícil!")
+        exp += exp_monstro_dificil
+    elif tipo_monstro == "chefe":
+        print("Você enfrentou um Monstro Chefe!")
+        exp += exp_monstro_chefe
+
+    print("Você ganhou", exp, "de experiência.")
+
+    # Verifica se o personagem subiu de nível
+    if exp >= exp_necessaria:
+        subir_de_nivel()
+
+    # Pergunta se deseja continuar jogando
+    continuar = input("Deseja continuar enfrentando monstros? [s/n]\n").strip().lower()
+    if continuar != 's':
+        print("Obrigado por jogar!")
+        break
+# Definindo atributos iniciais do personagem
+nivel = 1
+exp = 0
+atributo = 100  # Atributo inicial do personagem
+
+# Experiência por tipo de monstro
+exp_monstro_fraco = 50
+exp_monstro_medio = 100
+exp_monstro_dificil = 200
+exp_monstro_chefe = 500
+
+# Requisitos de EXP para subir de nível
+def exp_para_subir_nivel(nivel):
+    if nivel == 1:
+        return 100
+    else:
+        return int(100 * (1.4 ** (nivel - 1)))
+
+# Função para subir de nível
+def subir_de_nivel():
+    global nivel
+    global atributo
+    print("Parabéns! Você subiu para o nível", nivel + 1)
+    nivel += 1
+    atributo = int(atributo * 1.5)  # Aumenta o atributo em 50%
+    print("Seu novo atributo é:", atributo)
+
+# Loop principal do jogo
+while True:
+    print("\nVocê está no nível:", nivel)
+    print("Experiência atual:", exp)
+    exp_necessaria = exp_para_subir_nivel(nivel)
+    print("Experiência necessária para o próximo nível:", exp_necessaria)
+
+    # Escolher um monstro aleatório
+    tipo_monstro = random.choice(["fraco", "medio", "dificil", "chefe"])
+    if tipo_monstro == "fraco":
+        print("Você enfrentou um Monstro Fraco!")
+        exp += exp_monstro_fraco
+    elif tipo_monstro == "medio":
+        print("Você enfrentou um Monstro Médio!")
+        exp += exp_monstro_medio
+    elif tipo_monstro == "dificil":
+        print("Você enfrentou um Monstro Difícil!")
+        exp += exp_monstro_dificil
+    elif tipo_monstro == "chefe":
+        print("Você enfrentou um Monstro Chefe!")
+        exp += exp_monstro_chefe
+
+    print("Você ganhou", exp, "de experiência.")
+
+    # Verifica se o personagem subiu de nível
+    if exp >= exp_necessaria:
+        subir_de_nivel()
+
+    # Pergunta se deseja continuar jogando
+    continuar = input("Deseja continuar enfrentando monstros? [s/n]\n").strip().lower()
+    if continuar != 's':
+        print("Obrigado por jogar!")
+        break
+#############################################################################################
 caverna = str(input('Deseja entrar na caverna misteriosa? [s/n]\n '))
 if caverna == 's':
     print('Bem-vindo à Caverna. Pode entrar!')
