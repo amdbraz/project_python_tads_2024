@@ -141,15 +141,12 @@ monstroM = ['Médio', 4, 1, 12, 4]
 monstroD = ['Difícil', 6, 2, 20, 6]
 monstroC = ['Chefe', 10, 5, 45, 8]
 #Pergunta se deseja entrar na caverna
-caverna = input('Deseja entrar na caverna misteriosa? [s/n]\n ').strip().lower()
-
-if caverna == 's':
-    print('Bem-vindo à Caverna!')
+#caverna = input('Deseja entrar na caverna misteriosa? [s/n]\n ').strip().lower()
 
     #Pergunta se deseja continuar ou desistir
-    continuar = input('Você deseja continuar ou desistir? [s/n]\n ').strip().lower()
+continuar = input('Você deseja entrar na caverna misteriosa? [s/n]\n ').strip().lower()
 
-    if continuar == 's':
+if continuar == 's':
         #Rola o dado d20 para verificar o que encontrou
         rolagem = random.randint(1, 20)
 
@@ -171,11 +168,9 @@ if caverna == 's':
                 else:
                     print("Você não pode tentar abrir o baú novamente.")
 
-    else:
-        print('Você decidiu sair da caverna. Até a próxima! 🏃‍♂️💨')
+elif continuar == 'n':
+    print('Você decidiu sair da caverna. Até a próxima! 🏃‍♂️💨')
 
-elif caverna == 'n':
-    print('Você saiu da caverna! 🏃‍♂️💨')
 else:
     print("Resposta inválida. Por favor, digite 's' ou 'n'.")
 # Criando personagens
