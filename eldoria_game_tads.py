@@ -10,17 +10,17 @@ import math
 #personagem
 print("--------Seja Bem Vindo------")
 nome = str(input('Digite seu nomedo aventureiro: '))
-#jogador # Vida # ataque # defesa # esquiva 
+#jogador # Vida # ataque # defesa # esquiva
 base=[nome,8,2,1,0]
 jogador=[nome,0,2,0,0,0]
 #==-==-=-=-=-==-classe-=-=-=-=-=-=-=-=-
-#nome | Vida | Ataque | Defesa | Esquiva 
+#nome | Vida | Ataque | Defesa | Esquiva
 guerreiro=[0,0,2,1,-1]
 arqueiro=[0,-1,2,1,1]
 paladino=[0,1,1,1,-1]
 
 #=-=-=-=-==-Vocação-=-=-==-=-=
-#nome | Vida | Ataque | Defesa | Esquiva 
+#nome | Vida | Ataque | Defesa | Esquiva
 humano=[0,1,1,1,1]
 anao=[0,1,0,1,0]
 elfo=[0,0,1,0,2]
@@ -72,7 +72,7 @@ elif classe == 1 and raca==3:
     print (f'seu vida:{jogador[1]}')
     print (f'seu ataque:{jogador[2]}')
     print (f'sua defesa:{jogador[3]}')
-    print (f'esquiva:{jogador[4]}') 
+    print (f'esquiva:{jogador[4]}')
 elif classe == 2 and raca==1:
     jogador[1]=base[1]+arqueiro[1]+humano[1]
     jogador[2]=base[2]+arqueiro[2]+humano[2]
@@ -112,7 +112,7 @@ elif classe == 3 and raca==1:
     print (f'seu vida:{jogador[1]}')
     print (f'seu ataque:{jogador[2]}')
     print (f'sua defesa:{jogador[3]}')
-    print (f'esquiva:{jogador[4]}')    
+    print (f'esquiva:{jogador[4]}')
 elif classe == 3 and raca==2:
     jogador[1]=base[1]+paladino[1]+elfo[1]
     jogador[2]=base[2]+paladino[2]+elfo[2]
@@ -122,7 +122,7 @@ elif classe == 3 and raca==2:
     print (f'seu vida:{jogador[1]}')
     print (f'seu ataque:{jogador[2]}')
     print (f'sua defesa:{jogador[3]}')
-    print (f'esquiva:{jogador[4]}') 
+    print (f'esquiva:{jogador[4]}')
 elif classe == 3 and raca==3:
     jogador[1]=base[1]+paladino[1]+anao[1]
     jogador[2]=base[2]+paladino[2]+anao[2]
@@ -132,8 +132,7 @@ elif classe == 3 and raca==3:
     print (f'seu vida:{jogador[1]}')
     print (f'seu ataque:{jogador[2]}')
     print (f'sua defesa:{jogador[3]}')
-    print (f'esquiva:{jogador[4]}')       
-    
+    print (f'esquiva:{jogador[4]}')
 
 #monstro = ataque, defesa, vida, esquiva
 mmonstroF = ['Fraco',3, 1, 8, 2]
@@ -147,28 +146,28 @@ monstroC = ['Chefe', 10, 5, 45, 8]
 continuar = input('Você deseja entrar na caverna misteriosa? [s/n]\n ').strip().lower()
 
 if continuar == 's':
-        #Rola o dado d20 para verificar o que encontrou
-        rolagem = random.randint(1, 20)
-
-        if rolagem <= 2:
-            print("É um mímico! Você foi atacado!")
-        else:
-            print("É um baú!")
+ #Rola o dado d20 para verificar o que encontrou
+    for c in range (1, 20):
+         if c <= 2:
+             print("É um mímico! Você foi atacado!")
+    else:
+        print("É um baú!")
 
             #O jogador tem 1 tentativa para abrir o baú
-            rolagem_abertura = random.randint(1, 10)
-            if rolagem_abertura >= 2:
-                print("Você abriu o baú e ganhou uma poção que restaura 50% da vida!")
-            else:
-                print("Falha ao tentar abrir o baú.")
-                #Oferece a opção de desistir
-                desistir = input('Você deseja desistir de abrir o baú? [s/n]\n ').strip().lower()
-                if desistir == 's':
-                    print("Você decidiu desistir. O baú ficou fechado.")
-                else:
-                    print("Você não pode tentar abrir o baú novamente.")
 
-elif continuar == 'n':
+if c >= 2:
+    print("Você abriu o baú e ganhou uma poção que restaura 50% da vida!")
+else:
+    print("Falha ao tentar abrir o baú.")
+
+#Oferece a opção de desistir
+desistir = input('Você deseja desistir de abrir o baú? [s/n]\n ').strip().lower()
+if desistir == 's':
+    print("Você decidiu desistir. O baú ficou fechado.")
+else:
+     print("Você não pode tentar abrir o baú novamente.")
+
+if continuar == 'n':
     print('Você decidiu sair da caverna. Até a próxima! 🏃‍♂️💨')
 
 else:
@@ -191,22 +190,22 @@ print(f"{nome_heroi} rolou {d20} + Ataque({ataque_heroi}) = {resultado_ataque}")
 
 if resultado_ataque >= defesa_inimigo:
     print(f"{nome_heroi} acertou o ataque!")
-    
+
     # Teste de Esquiva
     d20_esquiva = random.randint(1, 20)
     resultado_esquiva = d20_esquiva + esquiva_inimigo
     print(f"{nome_inimigo} rolou {d20_esquiva} + Esquiva({esquiva_inimigo}) = {resultado_esquiva}")
-    
+
     if resultado_esquiva >= ataque_heroi:
         print(f"{nome_inimigo} esquivou do ataque!")
     else:
         print(f"{nome_inimigo} não esquivou!")
-        
+
         # Cálculo de dano
         dano = ataque_heroi - defesa_inimigo
         if dano < 0:
             dano = 0
-        
+
         print(f"Dano causado: {dano}")
 else:
     print(f"{nome_heroi} não conseguiu acertar!")
@@ -368,7 +367,7 @@ else:
 
 class monstro:
     def ___init____(self, personagen, exp_concedida):
-        self.personagen = personagen 
+        self.personagen = personagen
         self.exp_concedida = exp_concedida
 
 class personagem:
