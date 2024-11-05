@@ -135,7 +135,7 @@ elif classe == 3 and raca==3:
     print (f'esquiva:{jogador[4]}')
 
 #monstro = ataque, defesa, vida, esquiva
-mmonstroF = ['Fraco',3, 1, 8, 2]
+mmonstroF = ['Fraco',3, 1, 8, 2] #inserir os nomes dos monstros
 monstroM = ['Médio', 4, 1, 12, 4]
 monstroD = ['Difícil', 6, 2, 20, 6]
 monstroC = ['Chefe', 10, 5, 45, 8]
@@ -146,10 +146,15 @@ monstroC = ['Chefe', 10, 5, 45, 8]
 continuar = input('Você deseja entrar na caverna misteriosa? [s/n]\n ').strip().lower()
 
 if continuar == 's':
+
  #Rola o dado d20 para verificar o que encontrou
     for c in range (1, 20):
          if c <= 2:
              print("É um mímico! Você foi atacado!")
+
+
+
+#inserir combate do monstro - menu input ataque, defesa +20 e fugir
     else:
         print("É um baú!")
 
