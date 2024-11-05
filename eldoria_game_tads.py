@@ -4,6 +4,7 @@
 import os
 from random import randint
 import math
+import random
 
 #mimik = baú surpresa
 
@@ -151,7 +152,9 @@ if continuar == 's':
     for c in range (1, 20):
          if c <= 2:
              print("É um mímico! Você foi atacado!")
-
+    for d in range (3, 10):
+         if d <= 3:
+            print("será um bau e o jogador tentará abrir o bau em 3 tentativas")
 
 
 #inserir combate do monstro - menu input ataque, defesa +20 e fugir
@@ -189,7 +192,7 @@ defesa_inimigo = 2
 esquiva_inimigo = 1
 
 # Teste de Ataque
-d20 = random.randint(1, 20)
+d20 = random.randint(1, 20) 
 resultado_ataque = d20 + ataque_heroi
 print(f"{nome_heroi} rolou {d20} + Ataque({ataque_heroi}) = {resultado_ataque}")
 
