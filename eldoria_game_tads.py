@@ -10,7 +10,7 @@ import random
 
 #personagem
 print("--------Seja Bem Vindo------")
-nome = str(input('Digite seu nomedo aventureiro: '))
+nome = str(input('Digite seu nome do aventureiro: '))
 #jogador # Vida # ataque # defesa # esquiva
 base=[nome,8,2,1,0]
 jogador=[nome,0,2,0,0,0]
