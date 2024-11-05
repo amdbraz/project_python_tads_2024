@@ -69,7 +69,7 @@ elif classe == 1 and raca==3:
     jogador[3]=base[3]+guerreiro[3]+anao[3]
     jogador[4]=base[4]+guerreiro[4]+anao[4]
     print(f'{jogador[0]}')
-    print (f'seu vida:{jogador[1]}')
+    print (f'sua vida:{jogador[1]}')
     print (f'seu ataque:{jogador[2]}')
     print (f'sua defesa:{jogador[3]}')
     print (f'esquiva:{jogador[4]}')
@@ -79,7 +79,7 @@ elif classe == 2 and raca==1:
     jogador[3]=base[3]+arqueiro[3]+humano[3]
     jogador[4]=base[4]+arqueiro[4]+humano[4]
     print(f'{jogador[0]}')
-    print (f'seu vida:{jogador[1]}')
+    print (f'sua vida:{jogador[1]}')
     print (f'seu ataque:{jogador[2]}')
     print (f'sua defesa:{jogador[3]}')
     print (f'esquiva:{jogador[4]}')
@@ -89,7 +89,7 @@ elif classe == 2 and raca==2:
     jogador[3]=base[3]+arqueiro[3]+elfo[3]
     jogador[4]=base[4]+arqueiro[4]+elfo[4]
     print(f'{jogador[0]}')
-    print (f'seu vida:{jogador[1]}')
+    print (f'sua vida:{jogador[1]}')
     print (f'seu ataque:{jogador[2]}')
     print (f'sua defesa:{jogador[3]}')
     print (f'esquiva:{jogador[4]}')
@@ -99,7 +99,7 @@ elif classe == 2 and raca==3:
     jogador[3]=base[3]+arqueiro[3]+anao[3]
     jogador[4]=base[4]+arqueiro[4]+anao[4]
     print(f'{jogador[0]}')
-    print (f'seu vida:{jogador[1]}')
+    print (f'sua vida:{jogador[1]}')
     print (f'seu ataque:{jogador[2]}')
     print (f'sua defesa:{jogador[3]}')
     print (f'esquiva:{jogador[4]}')
@@ -109,7 +109,7 @@ elif classe == 3 and raca==1:
     jogador[3]=base[3]+paladino[3]+humano[3]
     jogador[4]=base[4]+paladino[4]+humano[4]
     print(f'{jogador[0]}')
-    print (f'seu vida:{jogador[1]}')
+    print (f'sua vida:{jogador[1]}')
     print (f'seu ataque:{jogador[2]}')
     print (f'sua defesa:{jogador[3]}')
     print (f'esquiva:{jogador[4]}')
@@ -119,7 +119,7 @@ elif classe == 3 and raca==2:
     jogador[3]=base[3]+paladino[3]+elfo[3]
     jogador[4]=base[4]+paladino[4]+elfo[4]
     print(f'{jogador[0]}')
-    print (f'seu vida:{jogador[1]}')
+    print (f'sua vida:{jogador[1]}')
     print (f'seu ataque:{jogador[2]}')
     print (f'sua defesa:{jogador[3]}')
     print (f'esquiva:{jogador[4]}')
@@ -129,7 +129,7 @@ elif classe == 3 and raca==3:
     jogador[3]=base[3]+paladino[3]+anao[3]
     jogador[4]=base[4]+paladino[4]+anao[4]
     print(f'{jogador[0]}')
-    print (f'seu vida:{jogador[1]}')
+    print (f'sua vida:{jogador[1]}')
     print (f'seu ataque:{jogador[2]}')
     print (f'sua defesa:{jogador[3]}')
     print (f'esquiva:{jogador[4]}')
