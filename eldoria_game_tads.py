@@ -124,16 +124,6 @@ elif classe == 3 and raca==2:
     print (f'seu ataque:{jogador[2]}')
     print (f'sua defesa:{jogador[3]}')
     print (f'esquiva:{jogador[4]}')
-elif classe == 3 and raca==3:
-    jogador[1]=base[1]+paladino[1]+anao[1]
-    jogador[2]=base[2]+paladino[2]+anao[2]
-    jogador[3]=base[3]+paladino[3]+anao[3]
-    jogador[4]=base[4]+paladino[4]+anao[4]
-    print(f'{jogador[0]}')
-    print (f'sua vida:{jogador[1]}')
-    print (f'seu ataque:{jogador[2]}')
-    print (f'sua defesa:{jogador[3]}')
-    print (f'esquiva:{jogador[4]}')
 
 #monstro = ataque, defesa, vida, esquiva
 mmonstroF = ['Fraco',3, 1, 8, 2] #inserir os nomes dos monstros
