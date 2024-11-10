@@ -388,3 +388,86 @@ class personagem:
         self.vida=100
         self.forca =10
         self.defesa =5
+        
+if classe==1 and raca==1:
+    jogador[1]=base[1]+guerreiro[1]+humano[1]
+    jogador[2]=base[2]+guerreiro[2]+humano[2]
+    jogador[3]=base[3]+guerreiro[3]+humano[3]
+    jogador[4]=base[4]+guerreiro[4]+humano[4]
+    print(f'{jogador[0]}')
+    print (f'sua vida:{jogador[1]}')
+    print (f'seu ataque:{jogador[2]}')
+    print (f'sua defesa:{jogador[3]}')
+    print (f'esquiva:{jogador[4]}')
+    print('teste')
+elif classe== 1 and raca==2:
+    jogador[1]=base[1]+guerreiro[1]+elfo[1]
+    jogador[2]=base[2]+guerreiro[2]+elfo[2]
+    jogador[3]=base[3]+guerreiro[3]+elfo[3]
+    jogador[4]=base[4]+guerreiro[4]+elfo[4]
+    print(f'{jogador[0]}')
+    print (f'sua vida:{jogador[1]}')
+    print (f'seu ataque:{jogador[2]}')
+    print (f'sua defesa:{jogador[3]}')
+    print (f'esquiva:{jogador[4]}')
+elif classe == 1 and raca==3:
+    jogador[1]=base[1]+guerreiro[1]+anao[1]
+    jogador[2]=base[2]+guerreiro[2]+anao[2]
+    jogador[3]=base[3]+guerreiro[3]+anao[3]
+    jogador[4]=base[4]+guerreiro[4]+anao[4]
+    print(f'{jogador[0]}')
+    print (f'sua vida:{jogador[1]}')
+    print (f'seu ataque:{jogador[2]}')
+    print (f'sua defesa:{jogador[3]}')
+    print (f'esquiva:{jogador[4]}')
+elif classe == 2 and raca==1:
+    jogador[1]=base[1]+arqueiro[1]+humano[1]
+    jogador[2]=base[2]+arqueiro[2]+humano[2]
+    jogador[3]=base[3]+arqueiro[3]+humano[3]
+    jogador[4]=base[4]+arqueiro[4]+humano[4]
+    print(f'{jogador[0]}')
+    print (f'sua vida:{jogador[1]}')
+    print (f'seu ataque:{jogador[2]}')
+    print (f'sua defesa:{jogador[3]}')
+    print (f'esquiva:{jogador[4]}')
+elif classe == 2 and raca==2:
+    jogador[1]=base[1]+arqueiro[1]+elfo[1]
+    jogador[2]=base[2]+arqueiro[2]+elfo[2]
+    jogador[3]=base[3]+arqueiro[3]+elfo[3]
+    jogador[4]=base[4]+arqueiro[4]+elfo[4]
+    print(f'{jogador[0]}')
+    print (f'sua vida:{jogador[1]}')
+    print (f'seu ataque:{jogador[2]}')
+    print (f'sua defesa:{jogador[3]}')
+    print (f'esquiva:{jogador[4]}')
+elif classe == 2 and raca==3:
+    jogador[1]=base[1]+arqueiro[1]+anao[1]
+    jogador[2]=base[2]+arqueiro[2]+anao[2]
+    jogador[3]=base[3]+arqueiro[3]+anao[3]
+    jogador[4]=base[4]+arqueiro[4]+anao[4]
+    print(f'{jogador[0]}')
+    print (f'sua vida:{jogador[1]}')
+    print (f'seu ataque:{jogador[2]}')
+    print (f'sua defesa:{jogador[3]}')
+    print (f'esquiva:{jogador[4]}')
+elif classe == 3 and raca==1:
+    jogador[1]=base[1]+paladino[1]+humano[1]
+    jogador[2]=base[2]+paladino[2]+humano[2]
+    jogador[3]=base[3]+paladino[3]+humano[3]
+    jogador[4]=base[4]+paladino[4]+humano[4]
+    print(f'{jogador[0]}')
+    print (f'sua vida:{jogador[1]}')
+    print (f'seu ataque:{jogador[2]}')
+    print (f'sua defesa:{jogador[3]}')
+    print (f'esquiva:{jogador[4]}')
+elif classe == 3 and raca==2:
+    jogador[1]=base[1]+paladino[1]+elfo[1]
+    jogador[2]=base[2]+paladino[2]+elfo[2]
+    jogador[3]=base[3]+paladino[3]+elfo[3]
+    jogador[4]=base[4]+paladino[4]+elfo[4]
+    print(f'{jogador[0]}')
+    print (f'sua vida:{jogador[1]}')
+    print (f'seu ataque:{jogador[2]}')
+    print (f'sua defesa:{jogador[3]}')
+    print (f'esquiva:{jogador[4]}')
+
