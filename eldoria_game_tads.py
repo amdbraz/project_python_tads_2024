@@ -374,20 +374,5 @@ else:
         print("Você falhou 3 vezes. O baú foi travado para sempre.")
 
 
-class monstro:
-    def ___init____(self, personagen, exp_concedida):
-        self.personagen = personagen
-        self.exp_concedida = exp_concedida
 
-class personagem:
-    def ____init_____(self, personagem):
-        self.personagem=personagem
-        self.nivel = 1
-        self.exp =0
-        self.exp_para_proximo_nivel = 100
-        self.vida=100
-        self.forca =10
-        self.defesa =5
-
-    
 
