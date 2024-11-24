@@ -345,34 +345,31 @@ while True:
         print("Obrigado por jogar!")
         break
 #############################################################################################
-caverna = str(input('Deseja entrar na caverna misteriosa? [s/n]\n '))
-if caverna == 's':
-    print('Bem-vindo à Caverna. Pode entrar!')
-elif caverna == 'n':
-    print('Você saiu da caverna!🏃‍♂️💨')
+## caverna = str(input('Deseja entrar na caverna misteriosa? [s/n]\n '))
+# if caverna == 's':
+#     print('Bem-vindo à Caverna. Pode entrar!')
+# elif caverna == 'n':
+#     print('Você saiu da caverna!🏃‍♂️💨')
 
-# Rola o dado d20 para verificar o baú
-rolagem = randint(1, 20 +1)
+# # Rola o dado d20 para verificar o baú
+# rolagem = randint(1, 20 +1)
 
-if rolagem <= 2:
-    print("É um mímico! Você foi atacado!")
-else:
-    print("É um baú!")
+# if rolagem <= 2:
+#     print("É um mímico! Você foi atacado!")
+# else:
+#     print("É um baú!")
 
-# O jogador tem 3 tentativas para abrir o baú
-    tentativas = 0
-    while tentativas < 3:
-        rolagem_abertura = randint(1, 20)
-        if rolagem_abertura >= 10:
-            print("Você abriu o baú e ganhou uma poção que restaura 50% da vida!")
-            break
-        else:
-            print("Falha ao tentar abrir o baú.")
-            tentativas += 1
+# # O jogador tem 3 tentativas para abrir o baú
+#     tentativas = 0
+#     while tentativas < 3:
+#         rolagem_abertura = randint(1, 20)
+#         if rolagem_abertura >= 10:
+#             print("Você abriu o baú e ganhou uma poção que restaura 50% da vida!")
+#             break
+#         else:
+#             print("Falha ao tentar abrir o baú.")
+#             tentativas += 1
 
-    if tentativas == 3:
-        print("Você falhou 3 vezes. O baú foi travado para sempre.")
-
-
-
+#     if tentativas == 3:
+#         print("Você falhou 3 vezes. O baú foi travado para sempre.")
 

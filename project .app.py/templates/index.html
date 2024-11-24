@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Aventura</title>
+    <style>
+        body {
+            /* Gradiente linear de cima para baixo */
+            background: linear-gradient(to bottom, #04beb5, #0cd868); /* Cor degradê */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+            padding: 0;
+            margin: 0;
+            height: 100vh;
+        }
+
+        h1 {
+            margin-top: 50px;
+            font-size: 3em;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 1em;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+            width: 250px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #FF7E5F;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+
+        button:hover {
+            background-color: #feb47b;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bem-vindo ao Jogo de Aventura!</h1>
+    <form action="/" method="POST">
+        <label for="name">Nome do Aventureiro:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <button type="submit">Começar</button>
+    </form>
+</body>
+</html>

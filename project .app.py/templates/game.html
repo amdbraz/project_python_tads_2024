@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Aventura</title>
+    <style>
+        body {
+            /* Adicionando um gradiente de fundo */
+            background: linear-gradient(to right, #0db907, #00d8cd); /* Degradê de rosa para laranja */
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #4CAF50; /* Verde */
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049; /* Tom de verde mais escuro */
+        }
+    </style>
+</head>
+<body>
+    <h1>Aventura de {{ player.name }}</h1>
+    <p>Nível: {{ player.level }}</p>
+    <p>Experiência: {{ player.exp }}</p>
+    <p>Atributo: {{ player.attribute }}</p>
+
+    {% if mensagem %}
+    <p>{{ mensagem }}</p>
+    {% endif %}
+
+    <form action="" method="POST">
+        <button type="submit" name="action" value="explore">Explorar</button>
+    </form>
+</body>
+</html>
+
