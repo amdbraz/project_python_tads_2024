@@ -4,58 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo de Aventura</title>
-    <style>
-        body {
-            /* Adicionando um gradiente de fundo */
-            background: linear-gradient(to right, #0db907, #00d8cd); /* Degradê de rosa para laranja */
-            font-family: Arial, sans-serif;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 1.2em;
-        }
-
-        form {
-            margin-top: 20px;
-        }
-
-        button {
-            background-color: #4CAF50; /* Verde */
-            color: white;
-            padding: 10px 20px;
-            font-size: 1.2em;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        button:hover {
-            background-color: #45a049; /* Tom de verde mais escuro */
-        }
-    </style>
 </head>
 <body>
-    <h1>Aventura de {{ player.name }}</h1>
-    <p>Nível: {{ player.level }}</p>
-    <p>Experiência: {{ player.exp }}</p>
-    <p>Atributo: {{ player.attribute }}</p>
-
-    {% if mensagem %}
+    <h1>Bem-vindo, {{ jogador['nome'] }}</h1>
+    <p>Nível: {{ jogador['nivel'] }}</p>
+    <p>Experiência: {{ jogador['exp'] }} / {{ exp_necessaria }}</p>
+    <p>Moedas: {{ jogador['moedas'] }}</p>
+    <p>Atributo: {{ jogador['atributo'] }}</p>
+    <hr>
     <p>{{ mensagem }}</p>
-    {% endif %}
-
-    <form action="" method="POST">
-        <button type="submit" name="action" value="explore">Explorar</button>
+    <form method="POST" action="/game">
+        <button type="submit" name="acao" value="abrir_bau">Abrir Baú</button>
+        <button type="submit" name="acao" value="enfrentar_monstro">Enfrentar Monstro</button>
+        <button type="submit" name="acao" value="sair_caverna">Sair da Caverna</button>
     </form>
 </body>
 </html>
-
